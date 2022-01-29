@@ -1,54 +1,117 @@
 header {
+  background: rgba(255, 255, 255, 0.92);
+  position: absolute;
+  top: 0;
+  width: 100%;
 
   .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 96px;
 
     nav {
+      max-width: 804px;
+      width: 100%;
       
       ul {
         display: flex;
+        justify-content: space-between;
 
         li {
           padding-right: 18px;
+          position: relative;
 
           a {
             position: relative;
+            border-bottom: 1px solid $mainTextGray;
           }
 
-          a:after {
-            content: "";
-            transition: ease-in-out all 0.2s;
-            background: url(../../images/svg/nav-arrow.svg) center center/contain;
-            pointer-events: none;
-            background-repeat: no-repeat;
-            width: 10px;
-            height: 100%;
-            display: inline-flex;
-            position: absolute;
-            right: 0;
+          .drop-down {
+            &:after {
+              content: "";
+              transition: ease-in-out all 0.2s;
+              background: url(../images/svg/nav-arrow.svg) center center/contain;
+              pointer-events: none;
+              background-repeat: no-repeat;
+              width: 10px;
+              height: 100%;
+              display: inline-flex;
+              position: absolute;
+              right: -18px;
+            }
           }
+
+          &:hover .drop-down:after {
+            transform: rotate(180deg);
+          }
+
+          &:hover {
+            .sub-menu {
+              display: block;
+            }
+          }
+
+          .sub-menu {
+            display: none;
+            position: absolute;
+            top: 58px;
+            background: rgba(255, 255, 255, 0.92);
+            width: 278px;
+            padding: 24px;
+
+            li {
+              padding-bottom: 24px;
+
+              &:last-child {
+                padding-bottom: 0;
+              }
+            }
+
+            &:after {
+              content: "";
+              position: absolute;
+              cursor: unset;
+              width: 100%;
+              height: 37px;
+              top: -37px;
+              left: 0;
+          }
+          }
+        }
+      }
+    }
+
+    .lang-switcher {
+      a {
+        position: relative;
+        margin-right: 15px;
+        border-bottom: 1px solid $mainTextGray;
+
+        &:last-child {
+          margin-right: 0;
+          
+          &::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 1px;
+            width: 1px;
+            height: 16px;
+            background-color: $mainTextGray;
+          }
+        }
+      }
+    }
+
+    .social-links {
+      a {
+        margin-right: 24px;
+
+        &:last-child {
+          margin-right: 0;
         }
       }
     }
   }
 }
-
-
-
-// .header__nav ul li:hover a:after {
-//     transform: rotate(180deg);
-// }
-
-// .header .nav-menu>li:hover>a:after {
-//   content: "";
-//   transition: ease-in-out all 0.2s;
-//   background: url(../../assets-marketing-com/images/arrows/arrow_red.svg) center center/contain;
-//   pointer-events: none;
-//   background-repeat: no-repeat;
-//   width: 12px;
-//   height: 100%;
-//   display: inline-flex;
-//   position: absolute;
-//   right: 0;
-// }

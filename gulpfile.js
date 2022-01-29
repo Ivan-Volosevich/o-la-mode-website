@@ -39,7 +39,7 @@ function webpackConf() {
 }
 
 function images() {
-    return gulp.src('src/assets/images/*')
+    return gulp.src('src/assets/images/**/*')
         .pipe(gulp.dest('./public/assets/images'))
         .pipe(browserSync.stream());
 }
