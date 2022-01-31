@@ -1,0 +1,149 @@
+.main-services {
+    padding: 140px 0;
+    background: no-repeat center 74%/100% 44% linear-gradient(76.59deg, rgba(228, 228, 228, 0) -1.66%, $mainBgGray 100%);
+
+    .main-online-services {
+
+        &__content {
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 58px;
+
+            &_left {
+                max-width: 589px;
+
+                &-description  {
+                    padding: 32px 0 54px;
+
+                    p {
+                        font-size: 24px;
+                        font-weight: 300;
+    
+                        &:nth-child(2) {
+                            padding-top: 29px;
+                        }
+                    }
+                }
+
+                &-links {
+                    font-family: $gothamPro;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 180%;
+
+                    ul {
+                        list-style: unset;
+
+                        li {
+                            margin-left: 50px;
+
+                            a {
+                                font-family: $gothamPro;
+                                font-weight: 400;
+                                font-size: 24px;
+                                line-height: 180%;
+                                border-bottom: 1px solid rgba(86, 86, 86, 0.3);
+
+                                &:hover {
+                                    font-weight: 500;
+                                }
+                            
+                                &:active {
+                                    font-weight: 500;
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-button {
+                    padding-top: 36px;
+                }
+            }
+
+            &_right {
+                &-img {
+                    max-width: 665px;
+
+                    img {
+                        max-width: 665px;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-offline-services {
+
+        &__content {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 58px;
+
+            &_right {
+                max-width: 548px;
+
+                &-place {
+                    span {
+                        font-family: $gothamPro;
+                        font-size: 24px;
+                        font-weight: 300;
+                        line-height: 135%;
+                        color: $mainTextGray;
+                        padding-left: 10px;
+                    }
+                }
+
+                &-description {
+                    padding: 32px 0 54px;
+
+                    p {
+                        font-size: 24px;
+                        font-weight: 300;
+    
+                        &:nth-child(2) {
+                            padding-top: 29px;
+                        }
+                    }
+                }
+
+                &-links {
+                    font-family: $gothamPro;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 180%;
+
+                    ul {
+                        list-style: unset;
+
+                        li {
+                            margin-left: 50px;
+
+                            a {
+                                font-family: $gothamPro;
+                                font-weight: 400;
+                                font-size: 24px;
+                                line-height: 180%;
+                                border-bottom: 1px solid rgba(86, 86, 86, 0.3);
+
+                                &:hover {
+                                    font-weight: 500;
+                                }
+                            
+                                &:active {
+                                    font-weight: 500;
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-button {
+                    padding-top: 36px;
+                }
+            }
+        }
+    }
+}

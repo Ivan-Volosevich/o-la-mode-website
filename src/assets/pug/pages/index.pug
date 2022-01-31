@@ -8,7 +8,6 @@ head
     link(rel='stylesheet' href='./assets/css/styles.css')
     script(src='./assets/js/main.js')
 body
-    #nav-shadow
 
     header
         .container
@@ -18,8 +17,24 @@ body
         .container
             include ../components/main/main-top-info
 
+    section.main-about
+        .container
+            include ../components/main/main-about
 
+    section.main-services
+        .container
+            include ../components/main/main-services
+
+    section.main-examples
+        .container
+            include ../components/main/main-examples
+
+    section.main-form
+        .container
+            include ../components/main/main-form
 
     footer
         .container
             include ../components/general/footer
+
+    #nav-shadow

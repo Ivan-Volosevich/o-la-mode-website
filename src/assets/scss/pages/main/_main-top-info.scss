@@ -1,8 +1,56 @@
 .main-top-info {
-    background-color: lightslategrey;
-    padding: 200px;
+    background: linear-gradient(283.74deg, $mainBgGray 0%, rgba(239, 239, 239, 0) 98.06%);
 
     @media (max-width: $max-tablet-width) {
         padding: 80px;
     }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_left {
+            height: 1000px;
+
+            &-img {
+                // position: absolute;
+                // left: 0;
+                // top: 0;
+                // z-index: 0;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        &_right {
+            width: 30.5%;
+
+            &-title {
+                padding-top: 352px;
+            }
+
+            &-name {
+                padding: 6px 0 40px;
+
+                p {
+                    font-size: 36px;
+                }
+            }
+
+            &-description {
+                p {
+                    font-size: 24px;
+                    font-weight: 300;
+                }
+            }
+
+            &-button {
+                padding: 48px 0 254px;
+            }
+        }
+    }
+        
 }

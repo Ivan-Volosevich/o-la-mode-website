@@ -33,16 +33,23 @@ h4,
 h5,
 h6,
 p {
+	color: $mainTextGray;
 	margin: 0;
 	padding: 0;
 	line-height: 136%;
 }
 
+p {
+	font-family: $gothamPro;
+}
+
 ol,
 ul {
+	font-family: $gothamPro;
 	list-style: none;
 	padding: 0;
 	color: $mainTextGray;
+	margin: 0;
 }
 
 a {
@@ -50,6 +57,7 @@ a {
 	color: $mainTextGray;
 	text-decoration: none;
 	font-size: 18px;
+	font-weight: 400;
 
 	@media screen and (max-width: $max-extra-desktop-width) {
 		font-size: 16px;
@@ -64,8 +72,15 @@ a {
 	}
 }
 
-a:hover {
-	text-decoration: none;
+a.link-btn {
+	&:hover {
+		font-weight: 500;
+	}
+
+	&:active {
+		font-weight: 500;
+		border: none;
+	}
 }
 
 #nav-shadow {
@@ -93,6 +108,30 @@ h1 {
 	}
 }
 
+h2 {
+	font-family: $notoSerif;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 135%;
+	color: $mainTextGray;
+	text-transform: uppercase;
+
+	@media screen and (max-width: $max-extra-desktop-width) {
+		font-size: 40px;
+	}
+
+	@media screen and (max-width: $max-tablet-width) {
+		font-size: 24px;
+	}
+}
+
+h3 {
+	font-family: $garamond;
+	font-size: 56px;
+	font-weight: 400;
+	color: $mainTextGray;
+}
+
 .svg-icon {
 	svg {
 		border-radius: 50%;
@@ -106,18 +145,43 @@ h1 {
 			box-shadow: 0px 4px 12px rgba(86, 86, 86, 0.92);
 		}
 
-		&:active path, &:focus path{
+		&:active path {
 			fill: #3B3B3B;
 		}
 	}
 
 	&__instagram {
-		svg:active path, svg:focus path{
+		svg:active path {
 			fill: $white;
 		}
 
-		svg:active circle, svg:focus circle{
+		svg:active circle {
 			fill: #3B3B3B;
 		}
+	}
+}
+
+.button {
+	cursor: pointer;
+	font-family: $gothamPro;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 136%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 56px;
+	color: $white;
+	background: $mainTextGray;
+	border: none;
+	max-width: fit-content;
+
+	&:hover {
+		box-shadow: 0px 8px 24px rgba(86, 86, 86, 0.42);
+	}
+
+	&:active {
+		background: $buttonActiveColor;
 	}
 }

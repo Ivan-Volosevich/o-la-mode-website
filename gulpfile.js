@@ -55,6 +55,7 @@ function watch() {
     styles();
     webpackConf();
     images();
+    gulp.watch('src/assets/images/**/*', images);
     gulp.watch('src/assets/js/**/*.js', webpackConf);
     gulp.watch('src/assets/scss/**/*.scss', styles);
     gulp.watch('src/assets/pug/**/*.pug', templates);

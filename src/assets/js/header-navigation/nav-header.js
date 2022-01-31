@@ -16,7 +16,4 @@ document.addEventListener("DOMContentLoaded", () => {
     navMenuToggle.checked = false;
     navShadow.style.display = 'none';
   }
-
-  console.log('navShadow: ', navShadow)
-  console.log('navMenuToggle: ', navMenuToggle.checked)
 })

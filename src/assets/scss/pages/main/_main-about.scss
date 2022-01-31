@@ -1,0 +1,36 @@
+.main-about {
+    background: no-repeat center 58% / 100% 50% linear-gradient(85.12deg, $mainBgGray 0%, rgba(228, 228, 228, 0) 100%);
+
+    &__content {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 142px 0;
+
+        &_right {
+            max-width: 548px;
+
+            &-title {
+                padding-top: 40px;
+            }
+
+            &-subtitle {
+                padding-bottom: 97px;
+
+                p {
+                    font-size: 24px;
+                }
+            }
+
+            &-description  {
+                p {
+                    font-size: 24px;
+                    font-weight: 300;
+
+                    &:nth-child(2) {
+                        padding: 29px 0;
+                    }
+                }
+            }
+        }
+    }
+}
