@@ -1,4 +1,8 @@
 .main-top-info {
     background-color: lightslategrey;
     padding: 200px;
+
+    @media (max-width: $max-tablet-width) {
+        padding: 80px;
+    }
 }
