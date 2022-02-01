@@ -5,6 +5,11 @@ header {
   width: 100%;
   z-index: 1;
 
+  @media screen and (max-width: $max-tablet-width) {
+    background: $white;
+    position: fixed;
+  }
+
   .container {
 
     .header__desktop {

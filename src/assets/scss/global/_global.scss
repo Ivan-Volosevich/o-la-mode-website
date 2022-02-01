@@ -117,11 +117,16 @@ h2 {
 	text-transform: uppercase;
 
 	@media screen and (max-width: $max-extra-desktop-width) {
-		font-size: 40px;
+		font-size: 38px !important;
 	}
 
+	@media screen and (max-width: $max-desktop-width) {
+		font-size: 30px !important;
+}
+
 	@media screen and (max-width: $max-tablet-width) {
-		font-size: 24px;
+		font-size: 24px !important;
+		color: $white;
 	}
 }
 
@@ -184,4 +189,12 @@ h3 {
 	&:active {
 		background: $buttonActiveColor;
 	}
+
+	@media screen and (max-width: $max-extra-desktop-width) {
+		padding: 12px 48px;
+	}
+
+	@media (max-width: $max-tablet-width) {
+		font-size: 16px;
+}
 }
