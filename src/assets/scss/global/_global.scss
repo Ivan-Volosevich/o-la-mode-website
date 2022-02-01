@@ -135,6 +135,18 @@ h3 {
 	font-size: 56px;
 	font-weight: 400;
 	color: $mainTextGray;
+
+	@media screen and (max-width: $max-ultra-desktop-width) {
+		font-size: 44px;
+	}
+
+	@media screen and (max-width: $max-extra-desktop-width) {
+		font-size: 40px;
+	}
+
+	@media screen and (max-width: $max-tablet-width) {
+		font-size: 24px;
+	}
 }
 
 .svg-icon {

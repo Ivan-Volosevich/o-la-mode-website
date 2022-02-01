@@ -17,6 +17,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: start;
+        position: relative;
 
         @media (max-width: $max-tablet-width) {
             justify-content: center;
@@ -33,7 +34,8 @@
             &_info-bottom {
                 text-align: center;
                 padding-bottom: 74px;
-                background: bottom 36px center / 87% 92% no-repeat url("../images/webp/main-top-info-bg-bottom-mobile.webp");
+                background: bottom 36px center / 87% 92% no-repeat url("../images/webp/main-top-info-bg-bottom-mobile.webp"),
+                            linear-gradient(283.74deg, $mainBgGray 0%, rgba(239, 239, 239, 0) 98.06%);;
             }
         }
 
