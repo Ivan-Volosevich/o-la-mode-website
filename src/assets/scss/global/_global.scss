@@ -39,10 +39,6 @@ p {
 	line-height: 136%;
 }
 
-p {
-	font-family: $gothamPro;
-}
-
 ol,
 ul {
 	font-family: $gothamPro;
@@ -149,6 +145,28 @@ h3 {
 	}
 }
 
+p {
+	font-family: $gothamPro;
+	font-size: 24px;
+	font-weight: 300;
+
+	@media screen and (max-width: $max-ultra-desktop-width) {
+		font-size: 20px;
+	}
+
+	@media screen and (max-width: $max-extra-desktop-width) {
+			font-size: 18px;
+	}
+
+	@media screen and (max-width: $max-desktop-width) {
+			font-size: 16px;
+	}
+
+	@media screen and (max-width: $max-tablet-width) {
+			font-size: 14px;
+	}
+}
+
 .svg-icon {
 	svg {
 		border-radius: 50%;
@@ -208,5 +226,128 @@ h3 {
 
 	@media (max-width: $max-tablet-width) {
 		font-size: 16px;
+	}
 }
+
+input, textarea {
+	max-width: 478px;
+	width: 100%;
+	font-family: $gothamPro;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 17px;
+	color: $mainTextGray;
+	background: $white;
+	border: 1px solid $mainTextGray;
+	box-sizing: border-box;
+	box-shadow: inset 0px 4px 4px rgba(0, 48, 71, 0.08);
+	padding: 20px;
+
+	&::placeholder {
+		font-family: $gothamPro;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 17px;
+		color: $placeholderTextGray;
+	}
+
+	&:hover, &:active {
+		border: 2px solid $mainTextGray;
+		box-sizing: border-box;
+		box-shadow: inset 0px 4px 4px rgba(0, 48, 71, 0.08);
+	}
+
+	&.input-phone {
+		max-width: 342px;
+		padding-left: 94px;
+	}
+}
+
+input {
+	height: 56px;
+}
+
+textarea {
+	min-height: 91px;
+	max-height: 154px;
+}
+
+.label-icon {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: $white;
+	border: 1px solid $mainTextGray;
+	box-sizing: border-box;
+
+	svg {
+		display: none;
+	}
+}
+
+.label-text {
+	font-family: $gothamPro;
+	font-weight: 300;
+	font-size: 12px;
+	padding-left: 12px;
+	line-height: 135%;
+	color: $mainTextGray;
+}
+
+.warning-message {
+	display: none;
+	font-family: $gothamPro;
+	font-weight: 400;
+	font-size: 12px;
+	color: $mainTextRed;
+	position: absolute;
+	bottom: 0px;
+
+	@media (max-width: $max-tablet-width) {
+		font-size: 10px;
+	}
+}
+
+.warning-message-textarea {
+	display: none;
+	font-family: $gothamPro;
+	font-weight: 400;
+	font-size: 12px;
+	color: #A88C74;
+	position: absolute;
+	bottom: 0px;
+
+	@media (max-width: $max-tablet-width) {
+		font-size: 10px;
+	}
+}
+
+.warning-frame {
+	background: $white !important;
+	border: 2px solid $mainTextRed !important;
+	box-sizing: border-box !important;
+	box-shadow: inset 0px 4px 4px rgba(0, 48, 71, 0.08) !important;
+}
+
+.disabled-input {
+	max-width: 478px;
+	width: 100%;
+	font-family: $gothamPro;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 17px;
+	color: $mainTextGray;
+	background: $formBgDisabled;
+	border: 1px solid $mainTextGray;
+	box-sizing: border-box;
+	box-shadow: inset 0px 4px 4px rgba(0, 48, 71, 0.08);
+	padding: 20px;
+
+	&::placeholder {
+		font-family: $gothamPro;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 17px;
+		color: $placeholderTextGray;
+	}
 }

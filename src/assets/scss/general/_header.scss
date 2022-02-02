@@ -3,7 +3,7 @@ header {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 
   @media screen and (max-width: $max-tablet-width) {
     background: $white;
@@ -55,20 +55,14 @@ header {
           a {
             position: relative;
             border-bottom: 1px solid rgba(86, 86, 86, 0.3);
-
-            // &:active {
-            //   font-weight: 500;
-            //   border: none;
-            // }
           }
 
           .drop-down {
             &:after {
               content: "";
               transition: ease-in-out all 0.2s;
-              background: url(../images/svg/nav-arrow.svg) center center/contain;
+              background: center center/contain no-repeat url(../images/svg/nav-arrow.svg) ;
               pointer-events: none;
-              background-repeat: no-repeat;
               width: 10px;
               height: 100%;
               display: inline-flex;
@@ -191,6 +185,19 @@ header {
           width: 100%;
           height: 64px;
           background: linear-gradient(85.12deg, rgba(228, 228, 228, 0) 0%, #EFEFEF 100%);
+
+          &_icon {
+            &:after {
+              content: "";
+              position: absolute;
+              cursor: unset;
+              height: 64px;
+              width: 249px;
+              background: rgba(86, 86, 86, 0.42);
+              top: 0;
+              right: -249px;
+            }
+          }
         }
 
         ul {

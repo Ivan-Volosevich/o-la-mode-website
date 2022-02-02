@@ -1,47 +1,45 @@
-.main-online-services
-    .main-online-services__content
-        .main-online-services__content_left
-            .main-online-services__content_left-title 
-                h3 Онлайн-услуги
-            .main-online-services__content_left-description 
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            .main-online-services__content_left-links 
-                ul Услуги:
-                    li 
-                        a(href="#").link-btn Консультирование
-                    li 
-                        a(href="#").link-btn Шопинг-сопровождение
-                    li 
-                        a(href="#").link-btn Всегда на связи
-            .main-online-services__content_left-button 
-                button.button Подробнее
+.main-services__content
+    .main-services__content_text
+        .main-services__content_text-title.main-services-online-title
+            h3 Онлайн-услуги
+        .main-services__description.main-services-online-description
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        .main-services__links 
+            ul Услуги:
+                li 
+                    a(href="#").link-btn Консультирование
+                li 
+                    a(href="#").link-btn Шопинг-сопровождение
+                li 
+                    a(href="#").link-btn Всегда на связи
+        .main-services__button 
+            button.button Подробнее
 
-        .main-online-services__content_right 
-            .main-online-services__content_right-img
-                img(src="./assets/images/webp/main-online-services.webp" alt="Онлайн-услуги image")
+    .main-services__content_image
+        .main-services__image
+            img(src="./assets/images/webp/main-online-services.webp" alt="Онлайн-услуги image")
 
-.main-offline-services
-    .main-offline-services__content
-        .main-offline-services__content_left
-            .main-offline-services__content_left-img 
-                img(src="./assets/images/webp/main-offline-services.webp" alt="Офлайн-услуги image")
-        
-        .main-offline-services__content_right
-            .main-offline-services__content_right-title
-                h3 Офлайн-услуги
-            .main-offline-services__content_right-place
-                svg(width='20' height='25' viewbox='0 0 20 25' fill='none' xmlns='http://www.w3.org/2000/svg')
-                    path(d='M9.99996 25C8.31588 23.5635 6.75488 21.9887 5.33329 20.292C3.19996 17.744 0.666627 13.9494 0.666627 10.3334C0.665702 8.48666 1.21264 6.68117 2.23822 5.14541C3.2638 3.60965 4.72192 2.41265 6.42805 1.7059C8.13418 0.999157 10.0116 0.814428 11.8228 1.1751C13.6339 1.53577 15.2974 2.42562 16.6026 3.73204C17.4716 4.59719 18.1604 5.62609 18.6291 6.75921C19.0979 7.89232 19.3372 9.10715 19.3333 10.3334C19.3333 13.9494 16.8 17.744 14.6666 20.292C13.245 21.9887 11.684 23.5635 9.99996 25ZM9.99996 6.33337C8.93909 6.33337 7.92168 6.7548 7.17153 7.50495C6.42139 8.25509 5.99996 9.27251 5.99996 10.3334C5.99996 11.3942 6.42139 12.4117 7.17153 13.1618C7.92168 13.9119 8.93909 14.3334 9.99996 14.3334C11.0608 14.3334 12.0782 13.9119 12.8284 13.1618C13.5785 12.4117 14 11.3942 14 10.3334C14 9.27251 13.5785 8.25509 12.8284 7.50495C12.0782 6.7548 11.0608 6.33337 9.99996 6.33337Z' fill='#565656')
-                span Бостон, США
-            .main-offline-services__content_right-description
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-            .main-offline-services__content_right-links
-                ul Услуги:
-                    li 
-                        a(href="#").link-btn Разбор гардероба
-                    li 
-                        a(href="#").link-btn Совместный шопинг
-            .main-offline-services__content_right-button
-                button.button Подробнее
+.main-services__content
+    .main-services__content_image
+        .main-services__image
+            img(src="./assets/images/webp/main-offline-services.webp" alt="Офлайн-услуги image")
+    
+    .main-services__content_text
+        .main-services__content_text-title
+            h3 Офлайн-услуги
+        .main-services__content_text-place
+            svg(width='20' height='25' viewbox='0 0 20 25' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M9.99996 25C8.31588 23.5635 6.75488 21.9887 5.33329 20.292C3.19996 17.744 0.666627 13.9494 0.666627 10.3334C0.665702 8.48666 1.21264 6.68117 2.23822 5.14541C3.2638 3.60965 4.72192 2.41265 6.42805 1.7059C8.13418 0.999157 10.0116 0.814428 11.8228 1.1751C13.6339 1.53577 15.2974 2.42562 16.6026 3.73204C17.4716 4.59719 18.1604 5.62609 18.6291 6.75921C19.0979 7.89232 19.3372 9.10715 19.3333 10.3334C19.3333 13.9494 16.8 17.744 14.6666 20.292C13.245 21.9887 11.684 23.5635 9.99996 25ZM9.99996 6.33337C8.93909 6.33337 7.92168 6.7548 7.17153 7.50495C6.42139 8.25509 5.99996 9.27251 5.99996 10.3334C5.99996 11.3942 6.42139 12.4117 7.17153 13.1618C7.92168 13.9119 8.93909 14.3334 9.99996 14.3334C11.0608 14.3334 12.0782 13.9119 12.8284 13.1618C13.5785 12.4117 14 11.3942 14 10.3334C14 9.27251 13.5785 8.25509 12.8284 7.50495C12.0782 6.7548 11.0608 6.33337 9.99996 6.33337Z' fill='#565656')
+            span Бостон, США
+        .main-services__description
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        .main-services__links
+            ul Услуги:
+                li 
+                    a(href="#").link-btn Разбор гардероба
+                li 
+                    a(href="#").link-btn Совместный шопинг
+        .main-services__button
+            button.button Подробнее

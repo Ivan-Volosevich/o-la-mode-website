@@ -181,34 +181,27 @@
             display: flex;
             flex-direction: column;
             position: absolute;
-            left: 134px;
-            bottom: 12.3vw;
+            left: -14px;
+            bottom: 7.3vw;
 
             a:first-child {
                 padding-bottom: 17px;
             }
 
             @media screen and (max-width: 1800px) {
-                left: 114px;
+                left: -26px;
             }
 
             @media screen and (max-width: $max-ultra-desktop-width) {
-                left: 104px;
+                left: -38px;
             }
 
             @media screen and (max-width: $max-extra-desktop-width) {
-                left: 96px;
-                bottom: 14vw;
-            }
-
-            @media screen and (max-width: $max-desktop-width) {
-                left: 86px;
-                bottom: 22vw;
+                left: 0;
             }
 
             @media screen and (max-width: 1150px) {
-                left: 76px;
-                bottom: 27vw;
+                bottom: 8.3vw;
             }
 
             @media screen and (max-width: $max-tablet-width) {
