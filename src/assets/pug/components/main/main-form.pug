@@ -5,7 +5,7 @@
         h3 Обсудим ваш образ?
       .main-form__content_form-name
         input#main-form-name(type="text" maxlength='255' placeholder='Ваше имя')
-        .warning-message Введите корректное имя, максимум 255 символов
+        .warning-message(data-input="name") Введите корректное имя, максимум 255 символов
       .main-form__content_form-phone
         input#main-form-phone(type="phone" placeholder='+1 _ _ _ - _ _ _ - _ _ _ _ ').input-phone
         .input-world
@@ -38,10 +38,10 @@
             path(d='M4.5 13.5L4.75 14.25H5.5L4.9 14.75L5.1 15.5L4.5 15.05L3.9 15.5L4.1 14.75L3.5 14.25H4.25L4.5 13.5Z' fill='white')
             path(d='M5.89993 6.5L6.49993 6.05L7.09993 6.5L6.84993 5.75L7.44993 5.25H6.69993L6.49993 4.5L6.24993 5.25H5.54993L6.14993 5.7L5.89993 6.5' fill='white')
             path(d='M1.89995 12.5L2.49995 12.05L3.09995 12.5L2.84995 11.75L3.44995 11.25H2.74995L2.49995 10.5L2.24995 11.25H1.74995C1.74995 11.3 1.69995 11.35 1.69995 11.4L2.09995 11.7L1.89995 12.5' fill='white')
-        .warning-message Введите корректный телефон
+        .warning-message(data-input="phone") Введите корректный телефон
       .main-form__content_form-email
         input#main-form-email(type="email" placeholder='E-mail')
-        .warning-message Введите корректный email
+        .warning-message(data-input="email") Введите корректный email
       .main-form__content_form-textarea
         textarea#main-form-message(name='message' placeholder='Комментарий или вопрос' maxlength='512')
         .warning-message-textarea
@@ -51,7 +51,7 @@
           svg(width='14' height='12' viewbox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg')
             path(d='M13.25 0.96875H12.1578C12.0047 0.96875 11.8594 1.03906 11.7656 1.15937L5.32344 9.32031L2.23438 5.40625C2.18765 5.34692 2.12809 5.29895 2.06016 5.26593C1.99224 5.23292 1.91772 5.21572 1.84219 5.21562H0.750008C0.645321 5.21562 0.587509 5.33594 0.651571 5.41719L4.93125 10.8391C5.13125 11.0922 5.51563 11.0922 5.71719 10.8391L13.3484 1.16875C13.4125 1.08906 13.3547 0.96875 13.25 0.96875Z' fill='#565656')
         label(for="main-form-chbx").label-text Я согласен(а) с обработкой моих персональных данных
-        .warning-message Подтвердите согласие на обработку персональных данных
+        .warning-message(data-input="chbx") Подтвердите согласие на обработку персональных данных
       .main-form__content_form-button 
         button(type='submit' action='#').button Отправить
       .main-form__content_form-clue 

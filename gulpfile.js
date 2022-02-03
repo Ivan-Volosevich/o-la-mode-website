@@ -48,7 +48,7 @@ function watch() {
     browserSync.init({
         server: {
             baseDir: './public',
-            index: 'index.html'
+            index: '*.html'
         }
     });
     fonts();

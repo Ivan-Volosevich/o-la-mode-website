@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1')
+        title O La Mode
+        meta(name="description", content="O La Mode")
+        meta(name="keywords", content="O La Mode")
+        link(rel='stylesheet' href='./assets/css/styles.css')
+        script(src='./assets/js/main.js')
+    body
+
+        header
+            .container
+                include ../components/general/header
+
+        section.services-online
+            .container
+                include ../components/services/services-online
+
+        section.services-offline
+            .container
+                include ../components/services/services-offline
+
+        footer
+            .container
+                include ../components/general/footer
+
+        #nav-shadow

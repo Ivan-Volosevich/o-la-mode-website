@@ -167,6 +167,10 @@ p {
 	}
 }
 
+.p-bold {
+	font-weight: 400;
+}
+
 .svg-icon {
 	svg {
 		border-radius: 50%;
@@ -230,8 +234,7 @@ p {
 }
 
 input, textarea {
-	max-width: 478px;
-	width: 100%;
+	width: 478px;
 	font-family: $gothamPro;
 	font-weight: 400;
 	font-size: 18px;
@@ -261,15 +264,57 @@ input, textarea {
 		max-width: 342px;
 		padding-left: 94px;
 	}
+
+	@media screen and (max-width: $max-extra-desktop-width) {
+		font-size: 16px;
+		width: 340px;
+
+		&::placeholder {
+			font-size: 16px;
+		}
+
+		&.input-phone {
+			max-width: 301px;
+		}
+	}
+
+	@media screen and (max-width: $max-tablet-width) {
+		width: 100%;
+		padding: 12px 16px;
+
+		&.input-phone {
+			max-width: unset;
+		}
+	}
+
+	@media screen and (max-width: $max-mobile-width) {
+		&.input-phone {
+			padding-left: 64px;
+		}
+	}
 }
 
 input {
 	height: 56px;
+
+	@media screen and (max-width: $max-extra-desktop-width) {
+		height: 46px;
+	}
 }
 
 textarea {
-	min-height: 91px;
-	max-height: 154px;
+	height: 91px;
+	resize: none;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	-ms-overflow-style: none;
+  scrollbar-width: none;
+
+	@media screen and (max-width: $max-tablet-width) {
+		height: 112px;
+	}
 }
 
 .label-icon {
@@ -292,6 +337,10 @@ textarea {
 	padding-left: 12px;
 	line-height: 135%;
 	color: $mainTextGray;
+
+	@media screen and (max-width: $max-mobile-width) {
+		width: 100%;
+	}
 }
 
 .warning-message {

@@ -59,8 +59,15 @@
         z-index: -1;
       }
 
+      @media screen and (max-width: $max-landscape-width) {
+        margin: 0 -40px -69px;
+        padding: 1px 40px 89px;
+      }
+
       @media screen and (max-width: $max-mobile-width) {
         background: center 85% / 100% 59% no-repeat linear-gradient(265.12deg, #EFEFEF 0%, rgba(228, 228, 228, 0) 100%);
+        margin: 0 -24px -69px;
+        padding: 1px 24px 89px;
       }
 
       &-image {
