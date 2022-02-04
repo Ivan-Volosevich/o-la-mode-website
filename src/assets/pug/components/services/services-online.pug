@@ -1,4 +1,4 @@
-.services-online__content
+.services-online__content#online
   .services-online__content_title
     h2 Услуги&nbsp;<br>онлайн
 
@@ -44,7 +44,7 @@
       .services__block_price
         h3 12 000 рублей
       .services__block_button
-        button.button Записаться
+        button(data-popup-open="Консультация").button Записаться
 
     .services__block
       .services__block_title
@@ -84,7 +84,7 @@
       .services__block_price
         h3 35 000 рублей
       .services__block_button
-        button.button Записаться
+        button(data-popup-open="Шопинг-сопровождение").button Записаться
 
     .services__block
       .services__block_title
@@ -123,14 +123,13 @@
       .services__block_price
         h3 30 000 рублей / месяц
       .services__block_button
-        button.button Записаться
+        button(data-popup-open="Всегда на связи").button Записаться
 
 
 
     .services__block_mobile
       input#checkbox-title-consulting(type="checkbox")
-      label(for="checkbox-title-consulting") 
-        h3.services-block-title-mobile Консультирование
+      label.services-block-title-mobile(for="checkbox-title-consulting") Консультирование
       .services__block
         .services__block_description
           p Знакомство. Вы рассказываете о себе, мы совместно формулируем цели и обсуждаем способы их достижения. Я отвечаю на все вопросы относительно вашего стиля.  
@@ -169,12 +168,11 @@
         .services__block_price
           h3 12 000 рублей
         .services__block_button
-          button.button Записаться
+          button(data-popup-open="Консультация").button Записаться
 
     .services__block_mobile
       input#checkbox-title-shoping-escort(type="checkbox")
-      label(for="checkbox-title-shoping-escort") 
-        h3.services-block-title-mobile Шопинг-сопровождение
+      label.services-block-title-mobile(for="checkbox-title-shoping-escort") Шопинг-сопровождение
       .services__block
         .services__block_description
           ul 
@@ -211,12 +209,11 @@
         .services__block_price
           h3 35 000 рублей
         .services__block_button
-          button.button Записаться
+          button(data-popup-open="Шопинг-сопровождение").button Записаться
 
     .services__block_mobile
       input#checkbox-title-in-touch(type="checkbox")
-      label(for="checkbox-title-in-touch") 
-        h3.services-block-title-mobile Всегда на связи
+      label.services-block-title-mobile(for="checkbox-title-in-touch") Всегда на связи
       .services__block
         .services__block_description
           p Вы отправляетесь по магазинам без стилиста, и вам требуется помощь. Удобно при масштабном шопинге или в распродажи.
@@ -252,4 +249,4 @@
         .services__block_price
           h3 30 000 рублей / месяц
         .services__block_button
-          button.button Записаться
+          button(data-popup-open="Всегда на связи").button Записаться

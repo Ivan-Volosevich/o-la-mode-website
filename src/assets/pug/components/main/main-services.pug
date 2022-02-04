@@ -6,7 +6,8 @@
             p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         .main-services__links 
-            ul Услуги:
+            span Услуги:
+            ul
                 li 
                     a(href="#").link-btn Консультирование
                 li 
@@ -14,7 +15,7 @@
                 li 
                     a(href="#").link-btn Всегда на связи
         .main-services__button 
-            button.button Подробнее
+            button(onclick="document.location='/services.html#online'").button Подробнее
 
     .main-services__content_image
         .main-services__image
@@ -36,10 +37,11 @@
             p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
         .main-services__links
-            ul Услуги:
+            span Услуги:
+            ul
                 li 
                     a(href="#").link-btn Разбор гардероба
                 li 
                     a(href="#").link-btn Совместный шопинг
         .main-services__button
-            button.button Подробнее
+            button.button(onclick="document.location='/services.html#offline'") Подробнее

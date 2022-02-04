@@ -141,7 +141,7 @@
             right: -18px;
           }
 
-          &:hover {
+          &:active {
             &:after {
               transform: rotate(180deg);
             }

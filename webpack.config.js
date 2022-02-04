@@ -1,8 +1,11 @@
-const path = require('path');
-
 module.exports = {
+    entry: {
+        'main': ['@babel/polyfill', './src/assets/js/main.js'],
+        'services': ['@babel/polyfill', './src/assets/js/services.js'],
+        'examples': ['@babel/polyfill', './src/assets/js/examples.js'],
+    },
     output: {
-        filename: 'main.js',
+        filename: '[name].js',
     },
     module: {
         rules: [

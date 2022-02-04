@@ -7,24 +7,23 @@ html(lang='ru')
         meta(name="description", content="O La Mode")
         meta(name="keywords", content="O La Mode")
         link(rel='stylesheet' href='./assets/css/styles.css')
-        script(src='./assets/js/services.js')
+        script(src='./assets/js/examples.js')
     body
 
         header
             .container
                 include ../components/general/header
 
-        section.services-online
+        section.examples
             .container
-                include ../components/services/services-online
-
-        section.services-offline
-            .container
-                include ../components/services/services-offline
+              .examples__content
+                .examples__content_title
+                  h2 Примеры работ.&nbsp;<br>Образы
+                include ../components/examples/examples-block-first
+                include ../components/examples/examples-block-second
 
         footer
             .container
                 include ../components/general/footer
 
         #nav-shadow
-        include ../components/general/popup-form

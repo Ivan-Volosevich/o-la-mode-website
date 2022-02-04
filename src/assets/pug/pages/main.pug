@@ -1,5 +1,5 @@
 doctype html
-html(lang='en')
+html(lang='ru')
     head
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1')
@@ -30,7 +30,7 @@ html(lang='en')
             .container
                 include ../components/main/main-examples
 
-        section.main-form
+        section.main-form#discuss
             include ../components/main/main-form
 
         footer
@@ -38,3 +38,4 @@ html(lang='en')
                 include ../components/general/footer
 
         #nav-shadow
+        include ../components/general/popup-form

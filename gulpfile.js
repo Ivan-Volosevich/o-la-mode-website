@@ -32,7 +32,7 @@ function templates() {
 }
 
 function webpackConf() {
-    return gulp.src('src/assets/js/index.js')
+    return gulp.src('src/assets/js/*.js')
         .pipe(webpackStream(webpackConfig), webpack)
         .pipe(gulp.dest('./public/assets/js'))
         .pipe(browserSync.stream());
@@ -59,7 +59,7 @@ function watch() {
     gulp.watch('src/assets/js/**/*.js', webpackConf);
     gulp.watch('src/assets/scss/**/*.scss', styles);
     gulp.watch('src/assets/pug/**/*.pug', templates);
-    gulp.watch('public/index.html').on('change', browserSync.reload);
+    gulp.watch('public/*.html').on('change', browserSync.reload);
 }
 
 

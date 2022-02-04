@@ -201,14 +201,13 @@
         font-weight: 400;
         font-size: 24px;
         line-height: 180%;
+        color: $mainTextGray;
 
         @media screen and (max-width: $max-tablet-width) {
             padding-top: 32px;
         }
 
-        ul {
-            list-style: unset;
-
+        span {
             @media screen and (max-width: $max-ultra-desktop-width) {
                 font-size: 20px;
             }
@@ -224,6 +223,10 @@
             @media screen and (max-width: 345px) {
                 font-size: 14px;
             }
+        }
+
+        ul {
+            list-style: unset;
 
             li {
                 margin-left: 50px;

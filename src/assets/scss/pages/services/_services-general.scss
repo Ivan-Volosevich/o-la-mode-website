@@ -5,26 +5,51 @@
   max-width: 528px;
   padding: 48px;
 
+  &_empty {
+    max-width: 528px;
+    width: 100%;
+  }
+
   @media (max-width: 1887px) {
     padding: 36px;
     max-width: 460px;
+
+    &_empty {
+      max-width: 460px;
+    }
   }
 
   @media (max-width: $max-ultra-desktop-width) {
     max-width: 375px;
+
+    &_empty {
+      max-width: 375px;
+    }
   }
 
   @media (max-width: 1340px) {
     padding: 24px;
     max-width: 355px;
+
+    &_empty {
+      max-width: 355px;
+    }
   }
 
   @media (max-width: $max-desktop-width) {
     max-width: 320px;
+
+    &_empty {
+      max-width: 320px;
+    }
   }
 
   @media (max-width: 1136px) {
     max-width: 275px;
+
+    &_empty {
+      max-width: 275px;
+    }
   }
 
   @media (max-width: $max-tablet-width) {
@@ -107,6 +132,10 @@
 
     p {
       padding-bottom: 31px;
+
+      @media (max-width: $max-tablet-width) {
+        padding-bottom: 19px;
+      }
     }
 
     ul {
@@ -275,7 +304,7 @@
     margin: 12px 0;
 
     input:checked + label {
-      h3:after {
+      &:after {
         transform: rotate(180deg);
       }
 

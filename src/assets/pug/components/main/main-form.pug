@@ -7,7 +7,7 @@
         input#main-form-name(type="text" maxlength='255' placeholder='Ваше имя')
         .warning-message(data-input="name") Введите корректное имя, максимум 255 символов
       .main-form__content_form-phone
-        input#main-form-phone(type="phone" placeholder='+1 _ _ _ - _ _ _ - _ _ _ _ ').input-phone
+        input#main-form-phone(type="tel" placeholder='+1 _ _ _ - _ _ _ - _ _ _ _ ').input-phone
         .input-world
           svg(width='32' height='32' viewbox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg')
             path(d='M24 3.3C21.65 1.85 18.95 1 16 1V3.3H24Z' fill='#ED4C5C')
@@ -53,7 +53,7 @@
         label(for="main-form-chbx").label-text Я согласен(а) с обработкой моих персональных данных
         .warning-message(data-input="chbx") Подтвердите согласие на обработку персональных данных
       .main-form__content_form-button 
-        button(type='submit' action='#').button Отправить
+        button(type='submit').button Отправить
       .main-form__content_form-clue 
         p Я свяжусь с вами в течение 1 дня.
 

@@ -1,12 +1,13 @@
-.services-online {
+.examples {
   padding-top: 160px;
   padding-bottom: 141px;
-  background: top right / 57.65% 50% no-repeat url("../images/webp/services-online.webp"),
+  background: top right / 57.65% 34.4% no-repeat url("../images/webp/examples.webp"),
   top left / 100% 100% linear-gradient(180deg, $mainBgGray 0%, $white 60%);
 
   @media (max-width: $max-tablet-width) {
+    min-height: calc(100vh - 211px);
     padding-top: 64px;
-    padding-bottom: 0px;
+    padding-bottom: 72px;
     background: linear-gradient(193.74deg, #EFEFEF 0%, rgba(239, 239, 239, 0) 98.06%);
   }
 
@@ -25,27 +26,27 @@
     @media (max-width: $max-tablet-width) {
       padding-top: 0;
       background: none;
+      display: flex;
+      flex-direction: column;
     }
 
     &_title {
+      padding-left: 116px;
       padding-bottom: 48px;
-      padding-left: 117px;
 
       h2 {
         text-transform: unset;
       }
 
       @media (max-width: $max-tablet-width) {
-        padding: 144px 0 16px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
         margin: 0 -60px;
+        padding: 113px 0 14px;
         background: top 24px center / 87% 100% no-repeat url("../images/webp/services-frame-mobile.webp"),
                     linear-gradient(180deg, rgba(86, 86, 86, 0) 0%, rgba(86, 86, 86, 0.42) 100%),
-                    top -160px center / cover no-repeat url("../images/webp/services-online.webp");
-        text-align: center;
-
-        br {
-          display: none;
-        }
+                    top -160px center / cover no-repeat url("../images/webp/examples.webp");
       }
 
       @media (max-width: $max-landscape-width) {
@@ -55,17 +56,7 @@
       @media (max-width: $max-mobile-width) {
         margin: 0 -24px;
         background: top 24px center / 88% 100% no-repeat url("../images/webp/services-frame-mobile.webp"),
-                    center / cover no-repeat url("../images/webp/services-online-mobile.webp");
-      }
-    }
-
-    &_info {
-      display: flex;
-      justify-content: space-between;
-
-      @media (max-width: $max-tablet-width) {
-        flex-direction: column;
-        margin: 12px 0;
+                    center / cover no-repeat url("../images/webp/examples-mobile.webp");
       }
     }
   }

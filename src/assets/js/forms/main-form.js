@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       inputName.classList.add('warning-frame');
     }
 
-    if (inputPhone.value.length === 14 || inputPhone.value.length === 0) {
+    if (inputPhone.value.length === 14 || inputPhone.value.length < 3) {
       Array.prototype.find.call(warningMessage, el => el.dataset.input === 'phone').style.display = 'none';
       inputPhone.classList.remove('warning-frame');
     } else {
