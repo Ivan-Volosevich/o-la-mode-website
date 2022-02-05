@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const inputMessage = document.querySelector('#main-form-message');
   const inputCheckbox = document.querySelector('#main-form-chbx');
   const warningMessage = document.querySelectorAll('.warning-message');
+  const modalPopupThank = document.querySelector('#modal-popup-thank');
+  const thankPopupText = document.querySelector('#thank-popup-text');
 
   let isValidForm = {
     'name': false,
@@ -85,8 +87,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       console.log('new message to post: ', postMessage)
       formMain.reset();
+      modalPopupThank.style.display = 'block';
+      thankPopupText.innerHTML = 'Форма отправлена, спасибо!';
     } else {
       console.log('valid: ', isValidForm)
+      // modalPopupThank.style.display = 'block';
+      // thankPopupText.innerHTML = 'При отправке возникла ошибка, попробуйте еще раз или напишите через соц сети.';
     }
 
   });

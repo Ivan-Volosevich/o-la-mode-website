@@ -61,7 +61,7 @@ header {
             &:after {
               content: "";
               transition: ease-in-out all 0.2s;
-              background: center center/contain no-repeat url(../images/svg/nav-arrow.svg) ;
+              background: center center/contain no-repeat url(../images/svg/nav-arrow.svg);
               pointer-events: none;
               width: 10px;
               height: 100%;

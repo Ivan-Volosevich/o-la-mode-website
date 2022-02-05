@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const inputPopupCheckbox = document.querySelector('#popup-form-chbx');
   const warningMessage = document.querySelectorAll('.warning-message');
   const openPopupButton = document.querySelectorAll('[data-popup-open]');
+  const modalPopupThank = document.querySelector('#modal-popup-thank');
+  const thankPopupText = document.querySelector('#thank-popup-text');
 
   let isValidPopupForm = {
     'name': false,
@@ -110,8 +112,12 @@ document.addEventListener('DOMContentLoaded', () => {
       modalPopup.style.display = 'none';
       document.body.style.overflow = 'auto';
       formPopup.reset();
+      modalPopupThank.style.display = 'block';
+      thankPopupText.innerHTML = 'Форма отправлена, спасибо!';
     } else {
       console.log('valid: ', isValidPopupForm)
+      // modalPopupThank.style.display = 'block';
+      // thankPopupText.innerHTML = 'При отправке возникла ошибка, попробуйте еще раз или напишите через соц сети.';
     }
   });
 
