@@ -1,7 +1,21 @@
 .main-form {
   padding-top: 140px;
+  padding-bottom: 112px;
   position: relative;
-  background: center 57% / 100% 55% no-repeat linear-gradient(86.18deg, #EFEFEF 0%, rgba(228, 228, 228, 0) 101.78%);
+  background: top 140px left 148px /92.3% 85% no-repeat url("../images/png/main-form-bg.png"),
+              center 57% / 100% 55% no-repeat linear-gradient(86.18deg, #EFEFEF 0%, rgba(228, 228, 228, 0) 101.78%);
+
+  @media screen and (max-width: $max-extra-desktop-width) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background: top 48px left 100px /93.1% 96% no-repeat url("../images/png/main-form-bg.png"),
+                center 57% / 100% 55% no-repeat linear-gradient(86.18deg, #EFEFEF 0%, rgba(228, 228, 228, 0) 101.78%);
+  }
+
+  @media screen and (max-width: $max-desktop-width) {
+    background: top 48px left 80px /93.8% 96% no-repeat url("../images/png/main-form-bg.png"),
+                center 57% / 100% 55% no-repeat linear-gradient(86.18deg, #EFEFEF 0%, rgba(228, 228, 228, 0) 101.78%);
+  }
 
   @media screen and (max-width: $max-tablet-width) {
     padding-top: 48px;
@@ -58,7 +72,12 @@
       &-title {
         padding-bottom: 11px;
 
+        @media screen and (max-width: 1140px) {
+          max-width: 275px;
+        }
+
         @media screen and (max-width: $max-tablet-width) {
+          max-width: unset;
           position: absolute;
           left: 0;
           width: 100%;
@@ -87,8 +106,17 @@
       input, textarea {
         margin: 16px 0;
 
+        @media screen and (max-width: $max-ultra-desktop-width) {
+          width: 390px;
+        }
+
         @media screen and (max-width: $max-extra-desktop-width) {
+          width: 360px;
           margin: 12px 0;
+        }
+
+        @media screen and (max-width: $max-desktop-width) {
+          width: 285px;
         }
       }
 
@@ -114,6 +142,11 @@
 
         @media screen and (max-width: $max-extra-desktop-width) {
           padding: 12px 0 12px;
+          max-width: 360px;
+        }
+
+        @media screen and (max-width: $max-desktop-width) {
+          width: 285px;
         }
 
         @media screen and (max-width: $max-tablet-width) {
@@ -149,6 +182,7 @@
 
           @media screen and (max-width: $max-extra-desktop-width) {
             left: 16px;
+            top: 24px;
 
             svg {
               width: 24px;
@@ -175,100 +209,6 @@
           padding-bottom: 34px;
           background: bottom center /100% 100% no-repeat url("../images/webp/main-form-frame-mob-bottom.webp");
         }
-      }
-    }
-
-    &_image {
-
-      &-img {
-        max-height: 796px;
-
-        img {
-          width: 100%;
-        }
-      }
-
-      @media (max-width: 1850px) {
-        &-img {
-          img {
-            width: 900px;
-            height: 796px;
-          }
-        }
-      }
-
-      @media screen and (max-width: $max-ultra-desktop-width) {
-        &-img {
-          max-height: 720px;
-
-          img {
-            width: 680px;
-            max-height: 720px;
-          }
-        }
-      }
-
-      @media screen and (max-width: $max-extra-desktop-width) {
-        &-img {
-          max-height: 670px;
-
-          img {
-            width: 630px;
-            max-height: 670px;
-          }
-        }
-      }
-
-      @media screen and (max-width: $max-desktop-width) {
-        &-img {
-          max-height: 650px;
-
-          img {
-            width: 500px;
-            max-height: 650px;
-          }
-        }
-      }
-
-      @media screen and (max-width: $max-tablet-width) {
-        display: none;
-      }
-    }
-  }
-
-  &__frame {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 204px 142px 0 148px;
-    z-index: 1;
-
-    @media screen and (max-width: $max-extra-desktop-width) {
-      padding: 204px 94px 0 100px;
-    }
-
-    @media screen and (max-width: $max-desktop-width) {
-      padding: 204px 76px 0 80px;
-    }
-
-    @media screen and (max-width: $max-tablet-width) {
-      display: none;
-    }
-
-    img {
-      width: 100%;
-      height: 668px;
-
-      @media screen and (max-width: $max-ultra-desktop-width) {
-        height: 626px;
-      }
-
-      @media screen and (max-width: $max-extra-desktop-width) {
-        height: 570px;
-      }
-
-      @media screen and (max-width: $max-desktop-width) {
-        height: 560px;
       }
     }
   }

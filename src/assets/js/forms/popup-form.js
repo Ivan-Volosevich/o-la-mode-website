@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
     mask: '+{1}000-000-0000'
   });
 
-  for(let buttonLinks of openPopupButton) {
-    buttonLinks.onclick = function() {
+  for(let buttonLink of openPopupButton) {
+    buttonLink.onclick = function() {
       modalPopup.style.display = 'block';
-      innerTitlePopup.innerHTML = buttonLinks.dataset.popupOpen;
+      innerTitlePopup.innerHTML = buttonLink.dataset.popupOpen;
       document.body.style.overflow = 'hidden';
     }
   }

@@ -6,8 +6,11 @@
     background: center 69% / 100% 40% no-repeat linear-gradient(76.13deg, #EFEFEF 0%, rgba(228, 228, 228, 0) 100%);
   }
 
-  @media screen and (max-width: $max-tablet-width) {
+  @media screen and (max-width: $max-extra-desktop-width) {
     padding: 48px 0;
+  }
+
+  @media screen and (max-width: $max-tablet-width) {
     background: none;
   }
 

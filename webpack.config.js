@@ -1,6 +1,6 @@
 module.exports = {
     entry: {
-        'main': ['@babel/polyfill', './src/assets/js/main.js'],
+        'index': ['@babel/polyfill', './src/assets/js/index.js'],
         'services': ['@babel/polyfill', './src/assets/js/services.js'],
         'examples': ['@babel/polyfill', './src/assets/js/examples.js'],
     },

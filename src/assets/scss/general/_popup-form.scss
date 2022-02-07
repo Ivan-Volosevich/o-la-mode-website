@@ -10,6 +10,7 @@
   overflow: auto;
   background-color: #000;
   background-color: rgba(0,0,0,.4);
+  overflow-y: scroll;
 
   &-content {
     z-index: 10;
@@ -154,6 +155,7 @@
 
           @media screen and (max-width: $max-extra-desktop-width) {
             left: 16px;
+            top: 24px;
 
             svg {
               width: 24px;

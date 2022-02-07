@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navShadow = document.getElementById('nav-shadow');
   const navMenuToggle = document.getElementById('toggle-nav');
   const navCloseMenuToggle = document.getElementById('close-nav-toggle');
+  const headerLinks = document.querySelectorAll('.header__mobile a');
 
   navMenuToggle.onclick = function(){
     navMenuToggle.checked === true 
@@ -20,5 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
     navMenuToggle.checked = false;
     navShadow.style.display = 'none';
     document.body.style.overflow = 'auto'
+  }
+
+  for(let headerLink of headerLinks) {
+    headerLink.onclick = function() {
+      navMenuToggle.checked = false;
+      navShadow.style.display = 'none';
+      document.body.style.overflow = 'auto'
+    }
   }
 })
