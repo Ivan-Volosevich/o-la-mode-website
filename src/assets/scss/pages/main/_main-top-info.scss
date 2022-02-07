@@ -108,6 +108,16 @@
                 @media (max-width: $max-mobile-width) {
                     max-width: 230px;
                 }
+
+                &-en {
+                    @media screen and (max-width: $max-desktop-width) {
+                        max-width: 295px;
+                    }
+        
+                    @media screen and (max-width: 1150px) {
+                        max-width: unset;
+                    }
+                }
             }
 
             &-name {

@@ -1,4 +1,5 @@
 import './header-navigation/nav-header'
+import './lang-switcher/lang-switcher'
 import './forms/main-form'
 import './forms/popup-form'
 import './forms/popup-thank'

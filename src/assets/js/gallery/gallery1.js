@@ -3,7 +3,7 @@ import Swiper from 'swiper/bundle';
 document.addEventListener('DOMContentLoaded', () => {
     const modalPopupGallery = document.querySelector('#modal-popup-gallery1');
     const openGallery1 = document.querySelectorAll('[data-open-gallery1]');
-    const closePopup = document.querySelector('.modal-gallery-content-close');
+    const closePopup = document.querySelector('.modal-gallery-content-close1');
     const paginationGallery1 = document.querySelector('#pagin-gallery1');
     const photosGallery1 = document.querySelectorAll('[data-gallery1]');
     let paginCounter = 1;

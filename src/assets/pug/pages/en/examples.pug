@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1')
+        title O La Mode
+        meta(name="description", content="O La Mode")
+        meta(name="keywords", content="O La Mode")
+        link(rel='stylesheet' href='../assets/css/styles.min.css')
+        script(src='../assets/js/examples-min.js')
+    body
+
+        header
+            .container
+                include ../../components/en/general/header
+
+        section.examples
+            .container
+                .examples__content
+                    .examples__content_title
+                        h2 Work examples.&nbsp;<br>Styles
+                    include ../../components/en/examples/examples-block-first
+                    include ../../components/en/examples/examples-block-second
+
+        footer
+            .container
+                include ../../components/en/general/footer
+
+        #nav-shadow
+
+        include ../../components/en/examples/popup-gallery1
+        include ../../components/en/examples/popup-gallery2

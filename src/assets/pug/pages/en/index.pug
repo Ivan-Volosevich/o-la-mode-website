@@ -1,0 +1,42 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1')
+        title O La Mode
+        meta(name="description", content="O La Mode")
+        meta(name="keywords", content="O La Mode")
+        link(rel='stylesheet' href='../assets/css/styles.min.css')
+        script(src='../assets/js/index-min.js')
+    body
+
+        header
+            .container
+                include ../../components/en/general/header
+
+        section.main-top-info
+            .container
+                include ../../components/en/main/main-top-info
+
+        section.main-about
+            .container
+                include ../../components/en/main/main-about
+
+        section.main-services
+            .container
+                include ../../components/en/main/main-services
+
+        section.main-examples
+            .container
+                include ../../components/en/main/main-examples
+
+        section.main-form#discuss
+            include ../../components/en/main/main-form
+
+        footer
+            .container
+                include ../../components/en/general/footer
+
+        #nav-shadow
+        include ../../components/en/general/popup-form
+        include ../../components/en/general/popup-thank

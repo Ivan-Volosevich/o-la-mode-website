@@ -1,31 +1,31 @@
 doctype html
-html(lang='ru')
+html(lang='en')
     head
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1')
         title O La Mode
         meta(name="description", content="O La Mode")
         meta(name="keywords", content="O La Mode")
-        link(rel='stylesheet' href='./assets/css/styles.min.css')
-        script(src='./assets/js/services-min.js')
+        link(rel='stylesheet' href='../assets/css/styles.min.css')
+        script(src='../assets/js/services-min.js')
     body
 
         header
             .container
-                include ../components/general/header
+                include ../../components/en/general/header
 
         section.services-online
             .container
-                include ../components/services/services-online
+                include ../../components/en/services/services-online
 
         section.services-offline
             .container
-                include ../components/services/services-offline
+                include ../../components/en/services/services-offline
 
         footer
             .container
-                include ../components/general/footer
+                include ../../components/en/general/footer
 
         #nav-shadow
-        include ../components/general/popup-form
-        include ../components/general/popup-thank
+        include ../../components/en/general/popup-form
+        include ../../components/en/general/popup-thank
