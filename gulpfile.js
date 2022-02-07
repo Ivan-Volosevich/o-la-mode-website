@@ -119,6 +119,16 @@ function templatesBuild() {
         .pipe(gulp.dest('build'));
 }
 
+function templatesEnBuild() {
+    return gulp.src('./src/assets/pug/pages/en/*.pug')
+        .pipe(gulpPug({
+            doctype: 'html',
+            pretty: true
+        }))
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(gulp.dest('./build/en'))
+}
+
 function webpackConfBuild() {
     return gulp.src('src/assets/js/*.js')
         .pipe(webpackStream(webpackConfig), webpack)
@@ -134,6 +144,7 @@ function imagesBuild() {
 async function build() {
     fontsBuild();
     templatesBuild();
+    templatesEnBuild();
     stylesBuild();
     webpackConfBuild();
     imagesBuild();
@@ -142,5 +153,6 @@ async function build() {
 exports.fontsBuild = fontsBuild;
 exports.imagesBuild = imagesBuild;
 exports.templatesBuild = templatesBuild;
+exports.templatesEnBuild = templatesEnBuild;
 exports.webpackConfBuild = webpackConfBuild;
 exports.build = build;
