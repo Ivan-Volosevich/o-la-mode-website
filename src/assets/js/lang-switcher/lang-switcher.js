@@ -1,3 +1,11 @@
+// window.addEventListener('load', () => {
+//   if (localStorage.getItem("langClient") === null || localStorage.getItem("langClient") === 'en') {
+//     if (document.location.pathname.slice(0, 3) === '/en') {
+//       document.location.href = document.location.pathname;
+//     }
+//   }
+// })
+
 document.addEventListener("DOMContentLoaded", () => {
   let lang = document.all[0].lang;
   localStorage.setItem('langClient', lang);
@@ -13,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.location.href = document.location.pathname.replace(/^.{3}/, '');
   }
 
-  if (document.location.pathname.slice(0, 3) == '/en') {
+  if (document.location.pathname.slice(0, 3) === '/en') {
     for (let enLanguageStyle of enLanguageStyles) {
       enLanguageStyle.classList.add("lang-weight__bold");
     }
